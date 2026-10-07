@@ -1,0 +1,179 @@
+/**
+ * THERU DESIGN SYSTEM TOKENS
+ * Centralized, token-driven foundation for visual consistency, accessibility, and restraint.
+ */
+
+:root {
+  /* =========================================================
+     1. COLOR TOKENS
+     ========================================================= */
+  
+  /* Canvas & Viewport Themes */
+  --color-bg-day: #dce7f0;
+  --color-bg-dusk: #c9d5e3;
+  --color-bg-night: #131720;
+
+  /* Surfaces & Glassmorphism */
+  --color-surface: rgba(255, 255, 255, 0.92);
+  --color-surface-solid: #ffffff;
+  --color-surface-elevated: rgba(255, 255, 255, 0.96);
+  --color-surface-modal: rgba(255, 255, 255, 0.98);
+  --color-surface-subtle: #f8f9fa;
+  --color-surface-muted: #f1f3f5;
+  --color-surface-card: #f8f9fa;
+  --color-surface-backdrop: rgba(15, 23, 42, 0.55);
+  --backdrop-blur-sm: 8px;
+  --backdrop-blur-md: 12px;
+  --backdrop-blur-lg: 18px;
+
+  /* Typography / Text Content */
+  --color-text-primary: #1a1a1a;
+  --color-text-body: #212529;
+  --color-text-secondary: #495057;
+  --color-text-muted: #868e96;
+  --color-text-subtle: #adb5bd;
+  --color-text-disabled: #ced4da;
+  --color-text-inverse: #ffffff;
+
+  /* Borders & Dividers */
+  --color-border: rgba(255, 255, 255, 0.6);
+  --color-border-subtle: #e9ecef;
+  --color-border-divider: #f1f3f5;
+  --color-border-strong: #ced4da;
+  --color-border-input: #dee2e6;
+  --color-border-input-focus: #d9480f;
+
+  /* Brand & Interactive (Theru Warm Spice Palette) */
+  --color-interactive: #d9480f;
+  --color-interactive-hover: #c92a2a;
+  --color-interactive-active: #b02a37;
+  --color-interactive-subtle: #fff5f5;
+  --color-interactive-subtle-border: #ffdeeb;
+  --color-brand-primary: #e03131;
+  --color-brand-hover: #c92a2a;
+  --color-brand-active: #b02a37;
+  --color-brand-subtle: #ffe3e3;
+  --color-brand-glow: rgba(224, 49, 49, 0.28);
+  --color-brand-red: #e03131;
+  --color-brand-red-light: #ffe3e3;
+  --color-accent-orange: #fd7e14;
+  --color-accent-blue: #228be6;
+  --color-accent-green: #2b8a3e;
+  --color-modal-backdrop: rgba(18, 24, 32, 0.42);
+
+  /* Feedback & Accessibility States */
+  --color-focus: #1c7ed6;
+  --color-focus-ring: rgba(28, 126, 214, 0.35);
+  --color-success: #2b8a3e;
+  --color-success-hover: #237032;
+  --color-success-subtle: #ebfbee;
+  --color-warning: #f59f00;
+  --color-warning-subtle: #fff9db;
+  --color-error: #e03131;
+  --color-error-hover: #c92a2a;
+  --color-error-subtle: #fff5f5;
+
+  /* Map Semantic Feedback */
+  --color-map-building-hover: #ffa94d;
+  --color-map-building-selected: #e03131;
+  --color-map-placement-valid: #2b8a3e;
+  --color-map-placement-invalid: #e03131;
+  --color-map-placement-valid-glow: rgba(43, 138, 62, 0.35);
+  --color-map-placement-invalid-glow: rgba(224, 49, 49, 0.35);
+
+  /* FoodSpot Setup Accents */
+  --color-food-stall: #0ca678;
+  --color-food-cart: #f59f00;
+  --color-food-van: #7048e8;
+  --color-food-shop: #1971c2;
+  --color-food-scooter: #e03131;
+
+  /* =========================================================
+     2. TYPOGRAPHY TOKENS
+     ========================================================= */
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-brand: 'Space Grotesk', sans-serif;
+
+  --font-size-2xs: 9.5px;
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 13px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 22px;
+
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.35;
+  --line-height-base: 1.45;
+  --line-height-relaxed: 1.55;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* =========================================================
+     3. SPACING TOKENS (4px / 8px Grid Base)
+     ========================================================= */
+  --space-3xs: 2px;
+  --space-2xs: 4px;
+  --space-xs: 6px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-base: 14px;
+  --space-lg: 16px;
+  --space-xl: 20px;
+  --space-2xl: 24px;
+  --space-3xl: 32px;
+  --space-4xl: 40px;
+
+  /* =========================================================
+     4. RADIUS TOKENS
+     ========================================================= */
+  --radius-2xs: 3px;
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  /* =========================================================
+     5. ELEVATION TOKENS
+     ========================================================= */
+  --elevation-none: none;
+  --elevation-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --elevation-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --elevation-lg: 0 10px 30px rgba(0, 0, 0, 0.14);
+  --elevation-xl: 0 16px 44px rgba(0, 0, 0, 0.16);
+
+  /* =========================================================
+     6. MOTION TOKENS
+     ========================================================= */
+  --motion-duration-fast: 0.15s;
+  --motion-duration-base: 0.25s;
+  --motion-duration-slow: 0.4s;
+  --motion-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --motion-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --motion-fast: 0.15s ease;
+  --motion-base: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  --motion-slow: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* =========================================================
+     7. Z-INDEX & LAYERING TOKENS
+     ========================================================= */
+  --z-canvas: 1;
+  --z-annotations: 100;
+  --z-billboard-line: 105;
+  --z-billboard-card: 110;
+  --z-controls: 200;
+  --z-hint: 210;
+  --z-panel: 300;
+  --z-hud: 400;
+  --z-modal-backdrop: 1000;
+  --z-modal: 1010;
+  --z-toast: 1100;
+}
